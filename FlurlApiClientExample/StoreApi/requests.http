@@ -1,0 +1,19 @@
+@BaseUrl = https://api.escuelajs.co/api
+
+### Gets a list of products
+GET {{BaseUrl}}/v1/products
+
+### Gets a single page of product
+GET {{BaseUrl}}/v1/products?offset=10&limit=2
+
+### Gets a list of products in the Electronics category
+GET {{BaseUrl}}/v1/products?categoryId=2
+
+### Gets a list of products in the price range 20-50 USD 
+GET {{BaseUrl}}/v1/products?categoryId=2&price_min=20&price_max=50
+
+### Gets a single product
+GET {{BaseUrl}}/v1/products/48
+
+### Gets a non-existing product
+GET {{BaseUrl}}/v1/products/999
